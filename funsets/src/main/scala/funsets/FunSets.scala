@@ -77,7 +77,7 @@ object FunSets {
   /**
    * Returns a set transformed by applying `f` to each element of `s`.
    * An integer is in the new set only if we can obtain it by
-   * a function f to an element x in the original set.
+   * applying a function f to an element x in the original set.
    */
     def map(s: Set, f: Int => Int): Set = (y: Int) => exists(s, (x: Int) => f(x) == y)
       
